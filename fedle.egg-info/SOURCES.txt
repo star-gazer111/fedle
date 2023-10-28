@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+fedle/__init__.py
+fedle/client.py
+fedle/server.py
+fedle/utils.py
+fedle.egg-info/PKG-INFO
+fedle.egg-info/SOURCES.txt
+fedle.egg-info/dependency_links.txt
+fedle.egg-info/requires.txt
+fedle.egg-info/top_level.txt
