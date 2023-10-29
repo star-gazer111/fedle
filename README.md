@@ -53,7 +53,7 @@ To get started with Fedle, follow these simple installation steps:
 2. Run `poetry install`
 3. Run `poetry shell`
 4. Then, install the required dependencies by running `pip install -r requirements.txt`.
-5. Run the setup script `python test.py install`.
+5. Run the test script `python test.py `.
 6. You're all set to begin using Fedle, our federated learning library for faster, more efficient model training.
 
 ## Rewards
