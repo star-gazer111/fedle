@@ -71,7 +71,7 @@ For easy & fast growth of this library, we'll mint out ERC-20 tokens to anyone w
 ```
   pip install -i https://test.pypi.org/simple/ fedle
 ```
-* We We craeted 10 clients & a server to be run on your local machine.
+* We created 10 clients & a server to be run on your local machine.
 * We ran our whole code on [Replit](https://replit.com/@mihir6453/fedle-1)
 * We also added our github on [Quine](https://quine.sh/repo/VasuK111-fedle-711340879)
 * We deployed our contracts on Ethereum Testnet & Polygon.
