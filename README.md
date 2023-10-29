@@ -3,7 +3,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/VasuK111/fedle.svg)](https://github.com/VasuK111/fedle/issues)
 [![GitHub contributors](https://img.shields.io/github/contributors/VasuK111/fedle.svg)](https://github.com/VasuK111/fedle/graphs/contributors)
 
-**The following project is a proof-of-concept of the original idea of building a decentralised DL models training platform. As our first step in the product building, we've for now built a library & a simply beautiful UI to reedeem the rewards you earn while helping us out to build this library further!
+**The following project is a proof-of-concept of the original idea of building a decentralised DL models training platform**. As our first step in the product building, we've for now built a library & a simply beautiful UI to reedeem the rewards you earn while helping us out to build this library further!
 
 # Fedle: Federated Learning Python Library
 
