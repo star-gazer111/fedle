@@ -5,7 +5,7 @@ import background from './stock/background.png';
 import './style/App.css';
 import './index.css';
 import ContractABI from './constant/contractAbi.json';
-// import axios from 'axios';
+import axios from 'axios';
 
 function App() {
   const textToCopy = 'pip install -i https://test.pypi.org/simple/ fedle';
@@ -17,21 +17,21 @@ function App() {
   const [walletAddress, setWalletAddress] = useState(null);
   const [data, setData] = useState("");
 
-  // function getData() {
-  //   const instance = axios.create({
-  //     baseURL: "https://github.com/login/oauth/authorize?client_id=340a1cea603c168283e3&scope=public_repo",
-  //   });
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await instance.get('/'); 
-  //       console.log(response);
-  //       setData(response.data);
-  //     } catch (error) {
-  //       console.error('Error:', error);
-  //     }
-  //   }
-  //   fetchData();
-  // }
+  function getData() {
+    const instance = axios.create({
+      baseURL: "https://github.com/login/oauth/authorize?client_id=340a1cea603c168283e3&scope=public_repo",
+    });
+    const fetchData = async () => {
+      try {
+        const response = await instance.get('/'); 
+        console.log(response);
+        setData(response.data);
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    }
+    fetchData();
+  }
 
   const handleContractCalls = async () => {
     try {
@@ -58,6 +58,7 @@ function App() {
     } catch (error) {
       console.error('Error calling contract methods:', error);
     }
+    getData();
   };
 
 
