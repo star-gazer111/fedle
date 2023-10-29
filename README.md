@@ -1,4 +1,8 @@
-.[![Contributors][contributors-shield]]
+[![GitHub forks](https://img.shields.io/github/forks/VasuK111/fedle.svg?style=social)](https://github.com/VasuK111/fedle/network)
+[![GitHub stars](https://img.shields.io/github/stars/VasuK111/fedle.svg?style=social)](https://github.com/VasuK111/fedle/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/VasuK111/fedle.svg)](https://github.com/VasuK111/fedle/issues)
+[![GitHub contributors](https://img.shields.io/github/contributors/VasuK111/fedle.svg)](https://github.com/VasuK111/fedle/graphs/contributors)
+
 
 
 
