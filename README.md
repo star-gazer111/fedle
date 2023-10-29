@@ -49,12 +49,13 @@ Our Python library for federated learning offers a solution to these problems. I
 ## Installation Steps
 To get started with Fedle, follow these simple installation steps:
 
-1. Clone the Fedle repository from GitHub.
-2. Run `poetry install`
-3. Run `poetry shell`
-4. Then, install the required dependencies by running `pip install -r requirements.txt`.
-5. Run the test script `python test.py `.
-6. You're all set to begin using Fedle, our federated learning library for faster, more efficient model training.
+1. Open your IDE.
+2. Run `pip install -i https://test.pypi.org/simple/ fedle`
+3. Run `poetry install`
+4. Run `poetry shell`
+5. Then, install the required dependencies by running `pip install -r requirements.txt`.
+6. Run the test script `python test.py `.
+7. You're all set to begin using Fedle, our federated learning library for faster, more efficient model training.
 
 ## Rewards
 
@@ -79,6 +80,11 @@ For easy & fast growth of this library, we'll mint out ERC-20 tokens to anyone w
 ## Malicious Clients
 
 We plan to keep clients who are not adding value to the network away through the logic of increasing accuracy. If at the end of each training round, we are getting an increase in accuracy, the training can continue further or else it aborts.
+
+## Challenges
+* We initially planned to integrate the Hyperledger Fabric network but couldn't finish it up on time.
+* Creating a library was easy but integrating files was not. It definitely took our head.
+* Creating the rewards logic in the contract was quite difficult too.
 
 ## What's next?
 
