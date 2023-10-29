@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'fedle',         # How you named your package folder (MyLib)
   packages = ['fedle'],   # Chose the same as "name"
-  version = '0.1',      # Start with a small number and increase it with every change you make
+  version = '0.1.1',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'Your go-to library for decentralised learning',   # Give a short description about your library
   author = 'SVM',                   # Type in your name
@@ -13,7 +13,7 @@ setup(
   install_requires=[            # I get to this in a second
         'flwr>=1.0, <2.0',
         'torch==1.13.1',
-        'torchvision==0.14.1'
+        'torchvision==0.14.1',
         'validators==0.18.2',
         'beautifulsoup4',
       ],
