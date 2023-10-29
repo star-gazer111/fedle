@@ -6,6 +6,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract Reward is Ownable {
     address[] public contributors;
     IERC20 public SVMtoken;
+    address[] public PossibleContributors;
+    uint256[] public commits;
 
     constructor(address _SVMtokenAddress) Ownable(msg.sender) {
         SVMtoken = IERC20(_SVMtokenAddress);
@@ -14,6 +16,15 @@ contract Reward is Ownable {
     modifier checkAllowance(uint amount) {
         require(SVMtoken.allowance(msg.sender, address(this)) >= amount, "Error");
         _;
+    }
+
+    function addPossibleContributors(address newAddress,uint256 value) public {
+        PossibleContributors.push(newAddress);
+        commits.push(value);
+    }
+
+    function getPossibleContributors() public view returns (address[] memory,uint256[] memory) {
+        return (PossibleContributors,commits);
     }
 
     function depositTokens(uint _amount) public checkAllowance(_amount) {
@@ -34,5 +45,5 @@ contract Reward is Ownable {
     }
 }
 
-// contract address --> 0x5ba32030ab045D2a0Ed376C27811A175c66e7274
-// etherscan.io URL --> https://sepolia.etherscan.io/tx/0x5ba265437dd49c05e520149ebc345e0ede46d16c398d45dc16729840566ec85b
+// deployed at --> 0x6c26A5E0bC8459451f5Cc065514117aCDae492cd
+// etherscan.io --> https://sepolia.etherscan.io/tx/0xa2a88b43c19fc2640fec2bde53496c6fcc8d7dda1cb3bdf2446ed27acbdf520b
