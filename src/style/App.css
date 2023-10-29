@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background-image: url('../stock/background.png');
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+h1 {
+  margin: 0;
+  padding: 0.5em;
+  color: white;
+  font-family: var(--font-indie-flower)
+}
+
+h2 {
+  margin: 0;
+  margin: 0.5em;
+  color: white;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.hero {
+  font-size: 5em;
+}
+
+.terminal {
+  color: white;
+  width: 50vw;
+  border: 2px solid rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5em;
+  padding: 1em;
+  background-color: rgb(39, 39, 39);
+  border-radius: 1em;
+  margin: 2em;
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 18px;
+  background-color: white;
+}
+
+.copy-icon {
+  cursor: pointer;
+}
+
+.connect-btn {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 1em;
+  padding: 0.5em;
+  font-size: 1.5em;
+  color: rgb(39, 39, 39);
+  cursor: pointer;
+  position: absolute;
+  top: 5%;
+  right: 2%;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

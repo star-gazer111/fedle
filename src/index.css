@@ -1,0 +1,24 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower:wght@400&display=swap");
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-indie-flower: "Indie Flower";
+  --font-irish-grover: "Irish Grover";
+
+  /* font sizes */
+  --font-size-21xl: 40px;
+  --font-size-151xl: 170px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-gray-100: #170e0e;
+
+  /* Border radiuses */
+  --br-11xl: 30px;
+}
