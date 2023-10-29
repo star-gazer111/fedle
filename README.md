@@ -61,7 +61,7 @@ To get started with Fedle, follow these simple installation steps:
 
 We are humans too & so we've limitations as well. There's no open source project that became succesful without an active community. We need you as much as you need us & so we planned out something.
 
-For easy & fast growth of this library, we'll mint out ERC-20 tokens to anyone who contributes to the library either by adding models to the library or adding the datasets to train on.
+For easy & fast growth of this library, we'll mint out ERC-20 tokens to anyone who contributes to the library either by adding models to the library or adding the datasets to train on. We deployed a sample contract on Polygon which can be viewed <a href="https://mumbai.polygonscan.com/tx/0x734bdf013c8e23427ba14285efca1874c902ef512e9d718f1c76f7b4ef29dbf5">here</a>.
 
 
 ## Technologies Used
