@@ -4,7 +4,18 @@ import { FaCopy } from 'react-icons/fa';
 import background from './stock/background.png';
 import './style/App.css';
 import './index.css';
-
+import axios from "./constant/axios";
+function getData() {
+  const fetchData = async () => {
+      try {
+          const response = await axios.get(''); // Replace 'your-github-username' with a valid GitHub username or resource
+          console.log(response.data);
+      } catch (error) {
+          console.error('Error:', error);
+      }
+  }
+  fetchData();
+}
 function App() {
   const textToCopy = 'pip install -i https://test.pypi.org/simple/ fedle';
   const tagline = "We Aim to Build Go to Library for training DL Models through Decentralized Computing";
@@ -13,10 +24,14 @@ function App() {
   const [showCursor, setShowCursor] = useState(true);
   const [web3, setWeb3] = useState(null);
   const [walletAddress, setWalletAddress] = useState(null);
+  const [data, setData] = useState("");
 
+
+  
   useEffect(() => {
     let currentIndex = 0;
     const taglineLength = tagline.length;
+
 
     if (window.ethereum) {
       const web3Instance = new Web3(window.ethereum);
@@ -89,7 +104,7 @@ function App() {
         <div className='wallet-button'>
           {walletAddress ? (
             <div>
-              <button className='connect-btn'  title={walletAddress} onMouseOver={() => setWalletAddress(walletAddress)} onMouseOut={() => setWalletAddress(renderAbbreviatedWallet(walletAddress))}>
+              <button className='connect-btn' title={walletAddress} onMouseOver={() => setWalletAddress(walletAddress)} onMouseOut={() => setWalletAddress(renderAbbreviatedWallet(walletAddress))}>
                 {renderAbbreviatedWallet(walletAddress)}
               </button>
             </div>
@@ -103,6 +118,7 @@ function App() {
         </div>
         <img className='background' alt="background" src={background} />
       </div>
+      <button onClick={() => getData()}>Claim Bounty</button>
     </div>
   );
 }
