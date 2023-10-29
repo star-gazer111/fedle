@@ -4,8 +4,8 @@ pragma solidity ^0.8.20;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract MyToken is ERC20, Ownable {
-    constructor () ERC20 ("HF_LAND", "SVM") Ownable(msg.sender) {
+contract SVMToken is ERC20, Ownable {
+    constructor() ERC20("fedle", "SVM") Ownable(msg.sender) {
         _mint(msg.sender, 1000000 * 10 ** decimals()); // Mint 1,000,000 tokens to the contract deployer
     }
 
@@ -13,5 +13,6 @@ contract MyToken is ERC20, Ownable {
         _mint(to, amount);
     }
 }
-// deployed at address --> 0xfed02b46ba769e703c8edb114568486aa09c4ddf
-// check it out at etherscan.io --> https://sepolia.etherscan.io/tx/0x0bbb55737e78f40efb6c61a9d403bd852051266f5f46230cfe8926bc2a6dd57a
+
+// deployed at --> 0xcD86F1AFA9afAB9e9eFB2DD667da19f01f5A7B7c
+// etherscan.io link --> https://sepolia.etherscan.io/tx/0x4ebe2e1854ffe9c50f2e6d1c5baffffc194c92d4f8a8cae1b4d1e798f37eb878
