@@ -6,7 +6,7 @@ import './style/App.css';
 import './index.css';
 
 function App() {
-  const textToCopy = 'pip install -i https://test.pypi.org/simple/ fedle==0.1';
+  const textToCopy = 'pip install -i https://test.pypi.org/simple/ fedle';
   const tagline = "We Aim to Build Go to Library for training DL Models through Decentralized Computing";
 
   const [typedText, setTypedText] = useState('');
