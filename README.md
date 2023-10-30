@@ -102,4 +102,4 @@ We also plan to integrate the Hyperledger Fabric to build a communication networ
 Thank you for choosing Fedle. We look forward to helping you streamline your deep learning projects.
 
 ## References
-[Adap](https://github.com/adap/flower/tree/main/examples/advanced-pytorch)
+[Adap](https://github.com/adap/flower/tree/main/examples/advanced-pytorch)  
